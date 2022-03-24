@@ -1,0 +1,145 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 2.9rem;
+}
+
+.image-box > img {
+  height: 8rem;
+}
+
+.strike > div {
+  font-family: "Pacifico", cursive;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: floralwhite;
+}
+
+.ball > div {
+  font-family: "Pacifico", cursive;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: floralwhite;
+}
+
+.strike {
+  display: flex;
+}
+.ball {
+  margin-top: 10px;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate {
+  from {
+    width: 3%;
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    width: 80%;
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+input {
+  box-sizing: border-box;
+  margin-top: 30px;
+  width: 120px;
+  height: 30px;
+  background-color: floralwhite;
+  border: none;
+  box-shadow: 1px 2px 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  transition: 2s;
+  animation: rotate 1s ease-in;
+}
+
+.start-button {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 1px 1px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  opacity: 90%;
+  box-shadow: 0.5px 1px 10px;
+}
+
+.cong,
+.fail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cong button,
+.fail button {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 1px 3px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    opacity: 30%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.chance {
+  margin-top: 20px;
+  animation: show 1s ease-in-out;
+}
+.hidden {
+  display: none;
+}
